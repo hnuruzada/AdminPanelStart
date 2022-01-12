@@ -1,0 +1,22 @@
+﻿@model Tag
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="row" style="align-items:center;justify-content:center;">
+    <div class="col-lg-9 my-5">
+        <div class="card-body">
+            <blockquote class="blockquote blockquote-primary" style="box-sizing:border-box;">
+                <div class="blockquote-danger mb-3" style="width:100%; margin:0;padding:0;">Tag</div>
+                <p>@Model.Name</p>
+            </blockquote>
+            <div class="row">
+                <form method="post" style="box-sizing:border-box; padding:0;margin:0;">
+                    <button class="btn btn-danger" style="width:100%;" type="submit">Delete</button>
+                </form>
+                <a class="btn btn-warning" asp-action="Index">Cancel</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
